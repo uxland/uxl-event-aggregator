@@ -37,7 +37,7 @@
     "nodemon": "^1.18.3",
     "nsp": "^2.6.3",
     "path": "^0.12.7",
-    "event-aggregator-mock-store": "https://github.com/dpinart/event-aggregator-mock-store.git",
+    "event-aggregator-mock-store": "https://github.com/dpinart/redux-mock-store.git",
     "require-dir": "^0.3.2",
     "rimraf": "^2.6.2",
     "semantic-release": "^15.9.12",
