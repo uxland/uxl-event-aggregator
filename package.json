@@ -5,10 +5,10 @@
   "homepage": "https://github.com/uxland/uxl-event-aggregator#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uxland/uxl-redux.git"
+    "url": "https://github.com/uxland/uxl-event-aggregator.git"
   },
   "bugs": {
-    "url": "https://github.com/uxland/uxl-redux/issues"
+    "url": "https://github.com/uxland/uxl-event-aggregator/issues"
   },
   "author": "UXLand <dev@uxland.es> (http://www.uxland.es)",
   "main": "dist/index.js",
@@ -22,7 +22,7 @@
     "@types/chai": "^4.1.4",
     "@types/lodash-es": "^4.17.0",
     "@types/mocha": "^5.2.2",
-    "@types/redux-mock-store": "^1.0.0",
+    "@types/event-aggregator-mock-store": "^1.0.0",
     "@types/sinon": "^5.0.1",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chai": "^4.1.2",
@@ -37,7 +37,7 @@
     "nodemon": "^1.18.3",
     "nsp": "^2.6.3",
     "path": "^0.12.7",
-    "redux-mock-store": "https://github.com/dpinart/redux-mock-store.git",
+    "event-aggregator-mock-store": "https://github.com/dpinart/event-aggregator-mock-store.git",
     "require-dir": "^0.3.2",
     "rimraf": "^2.6.2",
     "semantic-release": "^15.9.12",
