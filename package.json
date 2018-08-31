@@ -61,10 +61,10 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
-  "license": "Apache-2.0",
   "directories": {
     "test": "test"
   },
+  "license": "Apache-2.0",
   "publishConfig": {
     "access": "public"
   }
