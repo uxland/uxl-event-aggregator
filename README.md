@@ -1,21 +1,12 @@
 # \<uxl-event-aggregator\>
 
+[![Build Status](https://travis-ci.org/uxland/uxl-event-aggregator.svg?branch=master)](https://travis-ci.org/uxland/uxl-event-aggregator)
+[![npm version](https://badge.fury.io/js/%40uxland%2Fuxl-event-aggregator.svg)](https://badge.fury.io/js/%40uxland%2Fuxl-event-aggregator)
 
+## Installation
 
-## Install the Polymer-CLI
+`npm i @uxland/uxl-event-aggregator`
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
+## Usage
 
-## Viewing Your Element
-
-```
-$ polymer serve
-```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+`import {createAction, createActionThunk, createBasicReducer, createAsyncReducer, event-aggregatorMixin} from '@uxland/uxl-event-aggregator'`
