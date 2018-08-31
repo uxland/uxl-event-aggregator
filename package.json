@@ -2,7 +2,7 @@
   "name": "@uxland/uxl-event-aggregator",
   "version": "0.0.0-development",
   "description": "UXLand Event Aggregator",
-  "homepage": "https://bitbucket.org/newuibcn/uxl-event-aggregator",
+  "homepage": "https://github.com/uxland/uxl-event-aggregator",
   "author": {
     "name": "UXLand",
     "email": "dev@uxland.es",
@@ -57,6 +57,6 @@
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
-  "repository": "https://bitbucket.org/newuibcn/uxl-event-aggregator",
+  "repository": "https://github.com/uxland/uxl-event-aggregator",
   "license": "Apache-2.0"
 }
