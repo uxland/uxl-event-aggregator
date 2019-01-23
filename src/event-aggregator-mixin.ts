@@ -31,3 +31,4 @@ export const EventAggregatorMixin = <T = any>(superClass): IEventAggregatorMixin
   };
   return (<any>mixin) as IEventAggregatorMixin<T>;
 };
+
