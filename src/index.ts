@@ -1,2 +1,2 @@
-export { EventCallback, Subscription } from "./event-aggregator";
-export { IEventAggregatorMixin, IEventAggregatorMixinBase } from "./event-aggregator-mixin";
+export * from "./event-aggregator";
+export * from "./event-aggregator-mixin";
