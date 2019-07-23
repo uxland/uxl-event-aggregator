@@ -1,5 +1,4 @@
-import { eventAggregator, EventCallback, Subscription } from "./event-aggregator";
-import {} from "./event-aggregator";
+import { eventAggregator, EventCallback, Subscription } from './event-aggregator';
 export interface IEventAggregatorMixinBase {
   subscribe: (event: string, callback: EventCallback) => Subscription;
   subscribeOnce: (event: string, callback: EventCallback) => Subscription;
