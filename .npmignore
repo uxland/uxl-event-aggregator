@@ -1,4 +1,8 @@
 test/
-mochawesome-report/
-polymer.json
+src/
 tsconfig.json
+node_modules/
+README.md
+demo/
+.travis.yml
+coverage/
