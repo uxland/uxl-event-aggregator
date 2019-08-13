@@ -42,5 +42,3 @@ export const EventAggregatorMixin: () => EventAggregatorMixinFunction = () =>
     }
     return <any>EventAggregatorMixinClass;
   });
-
-export const RegionHost: EventAggregatorMixinFunction = EventAggregatorMixin();
