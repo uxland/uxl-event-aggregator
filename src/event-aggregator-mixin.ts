@@ -18,27 +18,26 @@ export interface EventAggregatorMixinConstructor extends LitElement {
 
 export type EventAggregatorMixinFunction = MixinFunction<EventAggregatorMixinConstructor>;
 
-export const EventAggregatorMixin: () => EventAggregatorMixinFunction = () =>
-  dedupingMixin((superClass: Constructor<LitElement>) => {
-    class EventAggregatorMixinClass extends superClass implements EventAggregatorMixin {
-      private subscriptions: Subscription[] = [];
-      subscribe(event: string, callback: EventCallback): Subscription {
-        let subscription = eventAggregator.subscribe(event, callback);
-        this.subscriptions.push(subscription);
-        return subscription;
-      }
-      subscribeOnce(event: string, callback: EventCallback): Subscription {
-        let subscription = eventAggregator.subscribeOnce(event, callback);
-        this.subscriptions.push(subscription);
-        return subscription;
-      }
-      publish(event: string, data: any) {
-        eventAggregator.publish(event, data);
-      }
-      disconnectedCallback() {
-        super.disconnectedCallback();
-        this.subscriptions.forEach(s => s.dispose());
-      }
+export const EventAggregatorMixin = dedupingMixin((superClass: Constructor<LitElement>) => {
+  class EventAggregatorMixinClass extends superClass implements EventAggregatorMixin {
+    private subscriptions: Subscription[] = [];
+    subscribe(event: string, callback: EventCallback): Subscription {
+      let subscription = eventAggregator.subscribe(event, callback);
+      this.subscriptions.push(subscription);
+      return subscription;
     }
-    return <any>EventAggregatorMixinClass;
-  });
+    subscribeOnce(event: string, callback: EventCallback): Subscription {
+      let subscription = eventAggregator.subscribeOnce(event, callback);
+      this.subscriptions.push(subscription);
+      return subscription;
+    }
+    publish(event: string, data: any) {
+      eventAggregator.publish(event, data);
+    }
+    disconnectedCallback() {
+      super.disconnectedCallback();
+      this.subscriptions.forEach(s => s.dispose());
+    }
+  }
+  return <any>EventAggregatorMixinClass;
+});
