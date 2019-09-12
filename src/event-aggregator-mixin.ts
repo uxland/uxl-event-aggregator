@@ -39,5 +39,5 @@ export const EventAggregatorMixin = dedupingMixin((superClass: Constructor<LitEl
       this.subscriptions.forEach(s => s.dispose());
     }
   }
-  return <any>EventAggregatorMixinClass;
+  return EventAggregatorMixinClass as any;
 });
